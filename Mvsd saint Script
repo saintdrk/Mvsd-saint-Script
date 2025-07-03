@@ -1,14 +1,14 @@
---// Check if in correct game
-if game.PlaceId ~= 12355337193 then
-	game:GetService("Players").LocalPlayer:Kick("You've been kicked by the owner of the script\n\nWrong Game Fucker")
-	return
-end
-
 --// Services
 local Players = game:GetService("Players")
 local RunService = game:GetService("RunService")
 
 local player = Players.LocalPlayer
+
+--// Game Check
+if game.PlaceId ~= 12355337193 then
+    player:Kick("Wrong Game Fucker")
+    return
+end
 
 --// GUI Setup
 local screenGui = Instance.new("ScreenGui", player:WaitForChild("PlayerGui"))
@@ -178,32 +178,36 @@ end)
 
 player.CharacterAdded:Connect(function(char)
 	char:WaitForChild("Humanoid")
-	char.Humanoid.WalkSpeed = speedEnabled and 20 or 16
 end)
 
--- Speed (WalkSpeed 20)
+-- Speed (WalkSpeed 28)
 local speedEnabled = false
 local speedButton = createButton("Speed: OFF", function(btn)
 	speedEnabled = not speedEnabled
 	btn.Text = "Speed: " .. (speedEnabled and "ON" or "OFF")
-	player.Character.Humanoid.WalkSpeed = speedEnabled and 20 or 16
+	player.Character.Humanoid.WalkSpeed = speedEnabled and 28 or 16
 end)
 
--- ESP (Head only)
+player.CharacterAdded:Connect(function(char)
+	char:WaitForChild("Humanoid").WalkSpeed = speedEnabled and 28 or 16
+end)
+
+-- ESP (Whole Body)
 createButton("Esp", function()
 	for _, p in pairs(Players:GetPlayers()) do
-		if p ~= player and p.Character and p.Character:FindFirstChild("Head") then
-			local head = p.Character.Head
-			if not head:FindFirstChild("ESPBox") then
-				local box = Instance.new("BoxHandleAdornment")
-				box.Name = "ESPBox"
-				box.Size = head.Size
-				box.Adornee = head
-				box.AlwaysOnTop = true
-				box.ZIndex = 5
-				box.Color3 = Color3.fromRGB(255, 0, 0)
-				box.Transparency = 0.7
-				box.Parent = head
+		if p ~= player and p.Character then
+			for _, part in pairs(p.Character:GetChildren()) do
+				if part:IsA("BasePart") and not part:FindFirstChild("ESPBox") then
+					local box = Instance.new("BoxHandleAdornment")
+					box.Name = "ESPBox"
+					box.Size = part.Size
+					box.Adornee = part
+					box.AlwaysOnTop = true
+					box.ZIndex = 5
+					box.Color3 = Color3.fromRGB(255, 0, 0)
+					box.Transparency = 0.7
+					box.Parent = part
+				end
 			end
 			if not p.Character:FindFirstChild("ChamHighlight") then
 				local hl = Instance.new("Highlight", p.Character)
