@@ -1,47 +1,221 @@
-local b='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
-function LKBveQCWteOWVIzyUVUaSbXJeyWJFXPanXcfJTsMXBecihBpNACiVwIfnlTpRTIUJOxeAjrqskf(data) m=string.sub(data, 0, 55) data=data:gsub(m,'')
-
-data = string.gsub(data, '[^'..b..'=]', '') return (data:gsub('.', function(x) if (x == '=') then return '' end local r,f='',(b:find(x)-1) for i=6,1,-1 do r=r..(f%2^i-f%2^(i-1)>0 and '1' or '0') end return r; end):gsub('%d%d%d?%d?%d?%d?%d?%d?', function(x) if (#x ~= 8) then return '' end local c=0 for i=1,8 do c=c+(x:sub(i,i)=='1' and 2^(8-i) or 0) end return string.char(c) end)) end
-
-
- 
-
-
-function OjHUQxKoqCDzvRnlsn(c)
-tab={}
-for i = 1,#c do
-x=string.len(c[i]) 
-y=string.char(x)
-table.insert(tab,y)
-end
-x=table.concat(tab)
-return x
-end 
-
-
 --// Services
-local Players = game:GetService(OjHUQxKoqCDzvRnlsn({LKBveQCWteOWVIzyUVUaSbXJeyWJFXPanXcfJTsMXBecihBpNACiVwIfnlTpRTIUJOxeAjrqskf('VNBJdqYlhnfmOaelhqSjdUixriKmAMEJdYvgCMqyOuVkmoYMGpBIejNKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKio='),LKBveQCWteOWVIzyUVUaSbXJeyWJFXPanXcfJTsMXBecihBpNACiVwIfnlTpRTIUJOxeAjrqskf('eqSazQZHCDyXeFKqQzmmAgmArRbIxLrNMupmFkikdHjCXTTRMTfWAHmKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioq'),LKBveQCWteOWVIzyUVUaSbXJeyWJFXPanXcfJTsMXBecihBpNACiVwIfnlTpRTIUJOxeAjrqskf('nUUDibHFlQlaiZKNEJizSYvXvDbLCfgmqTIoKvOojmYQhbPzYVTBPtzKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKg=='),LKBveQCWteOWVIzyUVUaSbXJeyWJFXPanXcfJTsMXBecihBpNACiVwIfnlTpRTIUJOxeAjrqskf('KzBEpxQlmmsghtysapzoPXyqBBfDQwAydRdyBZRkIBmVatveePUfTUvKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKg=='),LKBveQCWteOWVIzyUVUaSbXJeyWJFXPanXcfJTsMXBecihBpNACiVwIfnlTpRTIUJOxeAjrqskf('pHCsGvIlflqxRwGUPTNuGranEUlGbZZWPCNYbjNzgNqfNvjPkzkuNxXKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKio='),LKBveQCWteOWVIzyUVUaSbXJeyWJFXPanXcfJTsMXBecihBpNACiVwIfnlTpRTIUJOxeAjrqskf('eADpkMfflJvCNzmSGZKEWpnpdXRZJDKQOpiZXAzdSAmeJDpqkukypMTKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioq'),LKBveQCWteOWVIzyUVUaSbXJeyWJFXPanXcfJTsMXBecihBpNACiVwIfnlTpRTIUJOxeAjrqskf('zZxsIhQMHBplIaPsMDIdvwgMvDwJVZGfkuumGUwXipIBrzXHFqFRUfZKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKg==')}))
-local RunService = game:GetService(OjHUQxKoqCDzvRnlsn({LKBveQCWteOWVIzyUVUaSbXJeyWJFXPanXcfJTsMXBecihBpNACiVwIfnlTpRTIUJOxeAjrqskf('xYKkzFBtvJWfVuOkagDZsoNkWqmuTCHqDdEfwkusvqjepuyYMgYGFYjKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKg=='),LKBveQCWteOWVIzyUVUaSbXJeyWJFXPanXcfJTsMXBecihBpNACiVwIfnlTpRTIUJOxeAjrqskf('AGBTzeCMRBvQauXsugSAaZsrddJULoRCHQboGgxDQcYtsUMghTENSFNKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioq'),LKBveQCWteOWVIzyUVUaSbXJeyWJFXPanXcfJTsMXBecihBpNACiVwIfnlTpRTIUJOxeAjrqskf('VSnZzOssihkLgvzANBCEffXecCmbUmNazeFPUAaJLtztIGadBNjplaPKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKio='),LKBveQCWteOWVIzyUVUaSbXJeyWJFXPanXcfJTsMXBecihBpNACiVwIfnlTpRTIUJOxeAjrqskf('WDQEnjFIxuKPbgdwuFfEFkaHnHPaFcgmCtikGCqZixfuzAbmBjQQjEPKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKio='),LKBveQCWteOWVIzyUVUaSbXJeyWJFXPanXcfJTsMXBecihBpNACiVwIfnlTpRTIUJOxeAjrqskf('xsFlzXaDELEUjOvOSRNBgCDiAPtVApCfzEEdOawggrZOyJPxbzlezLUKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKio='),LKBveQCWteOWVIzyUVUaSbXJeyWJFXPanXcfJTsMXBecihBpNACiVwIfnlTpRTIUJOxeAjrqskf('ANqRrIDhfCEyyyInUPrqXhtWDqtKXbTHAsviYwThFkenUqKFqluycXlKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioq'),LKBveQCWteOWVIzyUVUaSbXJeyWJFXPanXcfJTsMXBecihBpNACiVwIfnlTpRTIUJOxeAjrqskf('LyFDVmZnYUZQaePvhTRvSqtozmoZZnyMYohzNeBcGcBwfjMYqnBzmXeKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKg=='),LKBveQCWteOWVIzyUVUaSbXJeyWJFXPanXcfJTsMXBecihBpNACiVwIfnlTpRTIUJOxeAjrqskf('RQELiXpISEcYlfNYvTbUuVndzYEWPkGJZRIIyqnjWPiThQVgpFlAKnKKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioq'),LKBveQCWteOWVIzyUVUaSbXJeyWJFXPanXcfJTsMXBecihBpNACiVwIfnlTpRTIUJOxeAjrqskf('SglhomWHJDnmmZurWjGsopgwhpTWWwgqIhdGgqLdkvtvyBqIMKDMChWKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioq'),LKBveQCWteOWVIzyUVUaSbXJeyWJFXPanXcfJTsMXBecihBpNACiVwIfnlTpRTIUJOxeAjrqskf('ohIgEozpuGcLIYvIhxqUflPusqURsHIpcCAaYkyROAdmmOwPeejfeDzKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKio=')}))
+local Players = game:GetService("Players")
+local RunService = game:GetService("RunService")
 
 local player = Players.LocalPlayer
 
 --// Game Check
 if game.PlaceId ~= 12355337193 then
-    player:Kick(OjHUQxKoqCDzvRnlsn({LKBveQCWteOWVIzyUVUaSbXJeyWJFXPanXcfJTsMXBecihBpNACiVwIfnlTpRTIUJOxeAjrqskf('bRrIyDnGALXPAdDNxDZGLBWPlLVGQgEcAAvnywUQVYRdhIzOoPjRszqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioq'),LKBveQCWteOWVIzyUVUaSbXJeyWJFXPanXcfJTsMXBecihBpNACiVwIfnlTpRTIUJOxeAjrqskf('LSNCNHkqHzubMExcpHycDUlzDsLRGBCMkoWGPEGwwQOsjlwhDAIPZOlKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioq'),LKBveQCWteOWVIzyUVUaSbXJeyWJFXPanXcfJTsMXBecihBpNACiVwIfnlTpRTIUJOxeAjrqskf('cdGsJyMGeFmLFFhUZCWnVkODPQKzonItmWPJiQeKUGvazZvaODCqNsOKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioq'),LKBveQCWteOWVIzyUVUaSbXJeyWJFXPanXcfJTsMXBecihBpNACiVwIfnlTpRTIUJOxeAjrqskf('biReTrqTiatOcQEFgFymqxTcCLxKFaJMSZrQKFIImqVicwTsMbrZPUAKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKio='),LKBveQCWteOWVIzyUVUaSbXJeyWJFXPanXcfJTsMXBecihBpNACiVwIfnlTpRTIUJOxeAjrqskf('oPihnATmzHLKgeWcYsphFFOLRHkRgOICIDZWsqXrJytgQzjkSYvMOZKKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKg=='),LKBveQCWteOWVIzyUVUaSbXJeyWJFXPanXcfJTsMXBecihBpNACiVwIfnlTpRTIUJOxeAjrqskf('yXZAFjqxIcbVUiznhjZBEerqOuTIioVhyKylQsjWkYiowJASkXjhjcNKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKio='),LKBveQCWteOWVIzyUVUaSbXJeyWJFXPanXcfJTsMXBecihBpNACiVwIfnlTpRTIUJOxeAjrqskf('EoSxigHbuloQhVTLQSpjPiAQewsLfhTGXpZPsXEKoJJcYagOJoDMpDFKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKio='),LKBveQCWteOWVIzyUVUaSbXJeyWJFXPanXcfJTsMXBecihBpNACiVwIfnlTpRTIUJOxeAjrqskf('avkTgldaTjoyupXozCuSJllsJDkoqWqielxsLXAkWKSWWwmdbPEfMciKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKg=='),LKBveQCWteOWVIzyUVUaSbXJeyWJFXPanXcfJTsMXBecihBpNACiVwIfnlTpRTIUJOxeAjrqskf('aFzpTrrxXUyNnYjhhXxwDgSBcEMpVskWWmqBtxlQNuXHkjjHKoJfwasKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKg=='),LKBveQCWteOWVIzyUVUaSbXJeyWJFXPanXcfJTsMXBecihBpNACiVwIfnlTpRTIUJOxeAjrqskf('VPiomzDtsIqKVNknsWfEJDdjqpuuCSXIREpQbMTiKgNqkznWHKQyiZoKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKio='),LKBveQCWteOWVIzyUVUaSbXJeyWJFXPanXcfJTsMXBecihBpNACiVwIfnlTpRTIUJOxeAjrqskf('pPwPjuEixKJtQTbKSztgTXQjvXcRhDeNVTSguJgzHdESmowmwJzXZlXKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKio='),LKBveQCWteOWVIzyUVUaSbXJeyWJFXPanXcfJTsMXBecihBpNACiVwIfnlTpRTIUJOxeAjrqskf('FschOXdUAMOknhaySNjPjbggXtFmAoeUTAygfEwFFWnSQtrzImpYhZLKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKg=='),LKBveQCWteOWVIzyUVUaSbXJeyWJFXPanXcfJTsMXBecihBpNACiVwIfnlTpRTIUJOxeAjrqskf('jSylZpiejHOkVBFwcGONsIqIqogEqHFViuRaUhGIKQlKqlmZgeAXtJdKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioq'),LKBveQCWteOWVIzyUVUaSbXJeyWJFXPanXcfJTsMXBecihBpNACiVwIfnlTpRTIUJOxeAjrqskf('RgghWyVcMEjrdqSYaNfaoRvwHfncEgjdoIuNrjgFtMIDrONvQIikyjXKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioq'),LKBveQCWteOWVIzyUVUaSbXJeyWJFXPanXcfJTsMXBecihBpNACiVwIfnlTpRTIUJOxeAjrqskf('HHgjNzSXKhEnlDHBQEcGxlHsEcxcplJdAYLiYBSQPvzhyCrwwDPreedKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKio='),LKBveQCWteOWVIzyUVUaSbXJeyWJFXPanXcfJTsMXBecihBpNACiVwIfnlTpRTIUJOxeAjrqskf('tyjgcOwkKxcdLztpNBZVefcTREsgZUiitWMuGSwkhmKMlxwgInnbMUJKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKio='),LKBveQCWteOWVIzyUVUaSbXJeyWJFXPanXcfJTsMXBecihBpNACiVwIfnlTpRTIUJOxeAjrqskf('UCobpmWNEDWfgTgkXDXQdLmobZsQRKfTzJwSDoYCwriutnVbbcNCBpPKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioq')}))
+    player:Kick("Wrong Game Fucker")
     return
 end
 
 --// GUI Setup
-local screenGui = Instance.new(OjHUQxKoqCDzvRnlsn({LKBveQCWteOWVIzyUVUaSbXJeyWJFXPanXcfJTsMXBecihBpNACiVwIfnlTpRTIUJOxeAjrqskf('VDyxxmBQEvNwsWIoYBKUgMptsZNhsMQuoVLPCxSZQwxKrkXuqqVoqZmKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKio='),LKBveQCWteOWVIzyUVUaSbXJeyWJFXPanXcfJTsMXBecihBpNACiVwIfnlTpRTIUJOxeAjrqskf('dTtxnVpKGFHuyIBARrYcEbAUoqwkOiFcAKaXXnxBqxAkteGpSmuvEpXKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioq'),LKBveQCWteOWVIzyUVUaSbXJeyWJFXPanXcfJTsMXBecihBpNACiVwIfnlTpRTIUJOxeAjrqskf('LkazudSnIKCHWJrXmyeCLzYLBYADKpohZvhmKIydEUtsEGwrPErVCjbKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioq'),LKBveQCWteOWVIzyUVUaSbXJeyWJFXPanXcfJTsMXBecihBpNACiVwIfnlTpRTIUJOxeAjrqskf('vPkvPGywMgVSrbhhWyEOitxqAnlngiQZqorBrcAbCweWgLFFFHdvWBGKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKio='),LKBveQCWteOWVIzyUVUaSbXJeyWJFXPanXcfJTsMXBecihBpNACiVwIfnlTpRTIUJOxeAjrqskf('CRxKjfntFOyPnJghiwRzwYNpupRXyGbtuYMeExzRpWmkcjXpsURrbQOKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKio='),LKBveQCWteOWVIzyUVUaSbXJeyWJFXPanXcfJTsMXBecihBpNACiVwIfnlTpRTIUJOxeAjrqskf('ibuloMQDPMWPyHOiHhmwjSkDpcXmxVuwSSxIeZaAGFygZHTPqHQChrLKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKio='),LKBveQCWteOWVIzyUVUaSbXJeyWJFXPanXcfJTsMXBecihBpNACiVwIfnlTpRTIUJOxeAjrqskf('ZHfaEpsazxhjctLCKOYqumCrIDPpQXhrZjKqNFnrkIxNzKZRxOGWIkPKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKio='),LKBveQCWteOWVIzyUVUaSbXJeyWJFXPanXcfJTsMXBecihBpNACiVwIfnlTpRTIUJOxeAjrqskf('HyeVxunfYSIyfIYSnknVZyjHWjfJBPHqEdOYQjJlAOCJXzLyBSNbJnMKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioq'),LKBveQCWteOWVIzyUVUaSbXJeyWJFXPanXcfJTsMXBecihBpNACiVwIfnlTpRTIUJOxeAjrqskf('yQATKAFJJsGuAuxiDDcNxauUomKwGIMkdWVlcXSqilXrlkSixzeoXgVKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioq')}), player:WaitForChild(OjHUQxKoqCDzvRnlsn({LKBveQCWteOWVIzyUVUaSbXJeyWJFXPanXcfJTsMXBecihBpNACiVwIfnlTpRTIUJOxeAjrqskf('xemXbCYhGqxoAbMRylouZYsGbOWufTJSpvBqKktOWPhdVIRQynkFExCKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKio='),LKBveQCWteOWVIzyUVUaSbXJeyWJFXPanXcfJTsMXBecihBpNACiVwIfnlTpRTIUJOxeAjrqskf('WAzjGZVuIECrmvABSZHiyuZpbyhzPvoFoXeaLtIRZVSIgQkkZElSYAYKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioq'),LKBveQCWteOWVIzyUVUaSbXJeyWJFXPanXcfJTsMXBecihBpNACiVwIfnlTpRTIUJOxeAjrqskf('TItmPwHdZxhCFwqVEhtWhJXTUKMDevfzslaemhcMarKghjrIcJdKUzrKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKg=='),LKBveQCWteOWVIzyUVUaSbXJeyWJFXPanXcfJTsMXBecihBpNACiVwIfnlTpRTIUJOxeAjrqskf('bWKWZNZsFeaUfdjPrphYSjaGcATTUxFHNZxwePxEJTYPgAkuSSTNhIfKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKg=='),LKBveQCWteOWVIzyUVUaSbXJeyWJFXPanXcfJTsMXBecihBpNACiVwIfnlTpRTIUJOxeAjrqskf('MIviJUsxvgiUbqQPzAjVAFJKHSNXpcHpHeovyyBCecultXkrUFsurvXKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKio='),LKBveQCWteOWVIzyUVUaSbXJeyWJFXPanXcfJTsMXBecihBpNACiVwIfnlTpRTIUJOxeAjrqskf('ZwbaOtddgYPrGvnfBuGnzQhCRbGgyJbDsIvHdaCkodAGsfYxHEiZwYrKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioq'),LKBveQCWteOWVIzyUVUaSbXJeyWJFXPanXcfJTsMXBecihBpNACiVwIfnlTpRTIUJOxeAjrqskf('lmJtJBVTamWXLctHxbTdUIKBwhqFrsEtjcikPcKjQiuCTIkjPbFyHQaKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKio='),LKBveQCWteOWVIzyUVUaSbXJeyWJFXPanXcfJTsMXBecihBpNACiVwIfnlTpRTIUJOxeAjrqskf('qPIYufpZgvLirhgsyQDjCrEhYLwNWBruZwiexavCVzLlUHkWQmuJJssKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioq'),LKBveQCWteOWVIzyUVUaSbXJeyWJFXPanXcfJTsMXBecihBpNACiVwIfnlTpRTIUJOxeAjrqskf('wFoStjZWEUnknGoNvvnfDQnpTjaoTaJvQdAMBoBtkfzIBqPANzRXFjLKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioq')})))
-screenGui.Name = OjHUQxKoqCDzvRnlsn({LKBveQCWteOWVIzyUVUaSbXJeyWJFXPanXcfJTsMXBecihBpNACiVwIfnlTpRTIUJOxeAjrqskf('LzecHyOFFNGKZfpOCrwhEssahIlEazMaOKGmzfVGotybnsIeLCYgaiHKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioq'),LKBveQCWteOWVIzyUVUaSbXJeyWJFXPanXcfJTsMXBecihBpNACiVwIfnlTpRTIUJOxeAjrqskf('HpOrKVWEXXgBIfIzMZKEJOxIrhGgcZYWivRycTiGwsggiLrddZkFYEdKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKio='),LKBveQCWteOWVIzyUVUaSbXJeyWJFXPanXcfJTsMXBecihBpNACiVwIfnlTpRTIUJOxeAjrqskf('nELZmTBJWfKqdCyZnFGCPgLBCEXiDmUuUBAZsYMtbEYGnCUgvRPDUgGKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKio='),LKBveQCWteOWVIzyUVUaSbXJeyWJFXPanXcfJTsMXBecihBpNACiVwIfnlTpRTIUJOxeAjrqskf('cjsxnFZIKlImnTvLSBMnxsLocZAzeVDWYPuhsDAodRqeevnauIZvGQaKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKg=='),LKBveQCWteOWVIzyUVUaSbXJeyWJFXPanXcfJTsMXBecihBpNACiVwIfnlTpRTIUJOxeAjrqskf('htDcKQnDppxFljLqtNUvnCKnZdQsLoGCSVfdbXZeZsOzShIViUZWSxVKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioq'),LKBveQCWteOWVIzyUVUaSbXJeyWJFXPanXcfJTsMXBecihBpNACiVwIfnlTpRTIUJOxeAjrqskf('YOHUvWnAoQkgIjkYubllHiBcLkSxJwiiWSTIIEyUTvligNjxfXabRpjKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioq'),LKBveQCWteOWVIzyUVUaSbXJeyWJFXPanXcfJTsMXBecihBpNACiVwIfnlTpRTIUJOxeAjrqskf('OixKxeRPuLtoNzqOdPjGwnFYyIhETxlsCCqjcPpgIZkngFGeZfYvREfKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKio='),LKBveQCWteOWVIzyUVUaSbXJeyWJFXPanXcfJTsMXBecihBpNACiVwIfnlTpRTIUJOxeAjrqskf('wYKyXTyvdAdLQrwkBWZWQTefkRUhbmBODcPteoADKvBsRhNxRbgKncyKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKio='),LKBveQCWteOWVIzyUVUaSbXJeyWJFXPanXcfJTsMXBecihBpNACiVwIfnlTpRTIUJOxeAjrqskf('NCiRjCpbdJjfJKEgFlrtnuxosXZEwCamycXYJOaOFiMWIKcKKPVVoHDKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKg=='),LKBveQCWteOWVIzyUVUaSbXJeyWJFXPanXcfJTsMXBecihBpNACiVwIfnlTpRTIUJOxeAjrqskf('DIYfTlzYwpVxWGOlEqWiGnPvruvBXibQIqMCGwtWShsRBZtWyjBeeGoKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKg==')})
+local screenGui = Instance.new("ScreenGui", player:WaitForChild("PlayerGui"))
+screenGui.Name = "BetaHubGUI"
 screenGui.ResetOnSpawn = false
 
 --// Loading Screen
-local loadingFrame = Instance.new(OjHUQxKoqCDzvRnlsn({LKBveQCWteOWVIzyUVUaSbXJeyWJFXPanXcfJTsMXBecihBpNACiVwIfnlTpRTIUJOxeAjrqskf('KbrqKmEVMJvyTaukXDRGFbCEnrwPyQpOhtJtoATFYrlycLfIlWUYHgGKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKg=='),LKBveQCWteOWVIzyUVUaSbXJeyWJFXPanXcfJTsMXBecihBpNACiVwIfnlTpRTIUJOxeAjrqskf('iZswHjAeZKzwdbJpDrKjiuuHjrWFJHOqIZEESTcTkgsfCgTwTJmFagCKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioq'),LKBveQCWteOWVIzyUVUaSbXJeyWJFXPanXcfJTsMXBecihBpNACiVwIfnlTpRTIUJOxeAjrqskf('gtkRXOdqMSliEOzzJkcuRCIwEOgnacKhpRMFJPqjFbaOEmeyIaTMttBKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKg=='),LKBveQCWteOWVIzyUVUaSbXJeyWJFXPanXcfJTsMXBecihBpNACiVwIfnlTpRTIUJOxeAjrqskf('iWUOTsUtigQntseZIclcUJWodWlGFiZCZVZAqEPZVTRakVQnnbFcfLYKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKg=='),LKBveQCWteOWVIzyUVUaSbXJeyWJFXPanXcfJTsMXBecihBpNACiVwIfnlTpRTIUJOxeAjrqskf('AOqplMZGCLHgAynmELLdTMwGRNYIrzGHVUdEEcvqlUxhOXRThYYjCClKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKio=')}), screenGui)
+local loadingFrame = Instance.new("Frame", screenGui)
 loadingFrame.Size = UDim2.new(0.45, 0, 0.25, 0)
 loadingFrame.Position = UDim2.new(0.275, 0, 0.375, 0)
 loadingFrame.BackgroundColor3 = Color3.fromRGB(30, 30, 45)
 loadingFrame.BorderSizePixel = 0
 loadingFrame.Active = true
 loadingFrame.Draggable = true
-Instance.new(OjHUQxKoqCDzvRnlsn({LKBveQCWteOWVIzyUVUaSbXJeyWJFXPanXcfJTsMXBecihBpNACiVwIfnlTpRTIUJOxeAjrqskf('oOaPzWAzJwGETdGmglnYyRfvMBLdadkKHsNZPEThEQjIBjuLrGirRgyKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKg=='),LKBveQCWteOWVIzyUVUaSbXJeyWJFXPanXcfJTsMXBecihBpNACiVwIfnlTpRTIUJOxeAjrqskf('HIISBfSWehVCLJAwRXgfzOMlzoIdVraBzqKXdAAUrbvSsWkhKwAlSyTKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKg=='),LKBveQCWteOWVIzyUVUaSbXJeyWJFXPanXcfJTsMXBecihBpNACiVwIfnlTpRTIUJOxeAjrqskf('XTQ
+Instance.new("UICorner", loadingFrame)
+
+local gradient = Instance.new("UIGradient", loadingFrame)
+gradient.Color = ColorSequence.new{
+	ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 85, 255)),
+	ColorSequenceKeypoint.new(1, Color3.fromRGB(100, 0, 255))
+}
+gradient.Rotation = 45
+
+local loadingText = Instance.new("TextLabel", loadingFrame)
+loadingText.Text = "🚀 Loading Beta Hub..."
+loadingText.Size = UDim2.new(1, -20, 0.35, 0)
+loadingText.Position = UDim2.new(0, 10, 0, 10)
+loadingText.TextColor3 = Color3.new(1, 1, 1)
+loadingText.Font = Enum.Font.GothamBold
+loadingText.TextSize = 26
+loadingText.BackgroundTransparency = 1
+loadingText.TextXAlignment = Enum.TextXAlignment.Left
+
+local percentText = Instance.new("TextLabel", loadingFrame)
+percentText.Text = "0%"
+percentText.Size = UDim2.new(1, -20, 0.25, 0)
+percentText.Position = UDim2.new(0, 10, 0.4, 0)
+percentText.TextColor3 = Color3.fromRGB(100, 200, 255)
+percentText.Font = Enum.Font.GothamSemibold
+percentText.TextSize = 22
+percentText.BackgroundTransparency = 1
+percentText.TextXAlignment = Enum.TextXAlignment.Right
+
+local progressBarBack = Instance.new("Frame", loadingFrame)
+progressBarBack.Size = UDim2.new(0.9, 0, 0.2, 0)
+progressBarBack.Position = UDim2.new(0.05, 0, 0.75, 0)
+progressBarBack.BackgroundColor3 = Color3.fromRGB(50, 50, 70)
+progressBarBack.BorderSizePixel = 0
+Instance.new("UICorner", progressBarBack)
+
+local progressBar = Instance.new("Frame", progressBarBack)
+progressBar.Size = UDim2.new(0, 0, 1, 0)
+progressBar.BackgroundColor3 = Color3.fromRGB(170, 85, 255)
+Instance.new("UICorner", progressBar)
+
+for i = 1, 100 do
+	progressBar.Size = UDim2.new(i / 100, 0, 1, 0)
+	percentText.Text = i .. "%"
+	RunService.RenderStepped:Wait()
+end
+loadingFrame:Destroy()
+
+--// Main Frame
+local mainFrame = Instance.new("Frame", screenGui)
+mainFrame.Size = UDim2.new(0.35, 0, 0.5, 0)
+mainFrame.Position = UDim2.new(0.325, 0, 0.3, 0)
+mainFrame.BackgroundColor3 = Color3.fromRGB(35, 25, 55)
+mainFrame.Visible = false
+mainFrame.Active = true
+mainFrame.Draggable = true
+Instance.new("UICorner", mainFrame)
+
+local scroll = Instance.new("ScrollingFrame", mainFrame)
+scroll.Size = UDim2.new(1, 0, 1, 0)
+scroll.CanvasSize = UDim2.new(0, 0, 0, 0)
+scroll.BackgroundTransparency = 1
+scroll.ScrollBarThickness = 5
+
+local layout = Instance.new("UIListLayout", scroll)
+layout.Padding = UDim.new(0, 6)
+layout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+layout.VerticalAlignment = Enum.VerticalAlignment.Top
+
+layout:GetPropertyChangedSignal("AbsoluteContentSize"):Connect(function()
+	scroll.CanvasSize = UDim2.new(0, 0, 0, layout.AbsoluteContentSize.Y + 10)
+end)
+
+-- Toggle Button (Draggable + RGB)
+local toggleButton = Instance.new("TextButton", screenGui)
+toggleButton.Text = "Beta 💎"
+toggleButton.Size = UDim2.new(0, 60, 0, 60)
+toggleButton.Position = UDim2.new(0.5, -30, 0.05, 0)
+toggleButton.BackgroundColor3 = Color3.fromRGB(50, 50, 60)
+toggleButton.TextColor3 = Color3.new(1, 1, 1)
+toggleButton.Font = Enum.Font.GothamBold
+toggleButton.TextScaled = true
+toggleButton.AutoButtonColor = false
+toggleButton.Active = true
+toggleButton.Draggable = true
+Instance.new("UICorner", toggleButton)
+
+task.spawn(function()
+	while true do
+		toggleButton.TextColor3 = Color3.fromHSV(tick() * 0.5 % 1, 1, 1)
+		RunService.RenderStepped:Wait()
+	end
+end)
+
+toggleButton.MouseButton1Click:Connect(function()
+	mainFrame.Visible = not mainFrame.Visible
+end)
+
+-- Button Creator
+local function createButton(text, callback)
+	local btn = Instance.new("TextButton")
+	btn.Size = UDim2.new(0.9, 0, 0, 40)
+	btn.Text = text
+	btn.BackgroundColor3 = Color3.fromRGB(55, 35, 85)
+	btn.TextColor3 = Color3.new(1, 1, 1)
+	btn.Font = Enum.Font.GothamSemibold
+	btn.TextScaled = true
+	Instance.new("UICorner", btn)
+	btn.Parent = scroll
+	btn.MouseButton1Click:Connect(function()
+		callback(btn)
+	end)
+	return btn
+end
+
+-- Big Hitbox
+createButton("Big Hitbox", function()
+	RunService.RenderStepped:Connect(function()
+		for _, v in pairs(Players:GetPlayers()) do
+			if v ~= player and v.Character and v.Character:FindFirstChild("Head") then
+				pcall(function()
+					local h = v.Character.Head
+					h.Size = Vector3.new(15, 15, 15)
+					h.Transparency = 1
+					h.BrickColor = BrickColor.new("Really red")
+					h.Material = "Neon"
+					h.CanCollide = false
+					h.Massless = true
+				end)
+			end
+		end
+	end)
+end)
+
+-- Auto Jump
+local autoJumpEnabled = false
+local autoJumpButton = createButton("Auto Jump: OFF", function(btn)
+	autoJumpEnabled = not autoJumpEnabled
+	btn.Text = "Auto Jump: " .. (autoJumpEnabled and "ON" or "OFF")
+end)
+
+RunService.RenderStepped:Connect(function()
+	if autoJumpEnabled then
+		local char = player.Character
+		if char and char:FindFirstChild("Humanoid") and char:FindFirstChild("HumanoidRootPart") then
+			local hum = char:FindFirstChild("Humanoid")
+			if hum:GetState() == Enum.HumanoidStateType.Running or hum:GetState() == Enum.HumanoidStateType.Landed then
+				hum:ChangeState(Enum.HumanoidStateType.Jumping)
+			end
+		end
+	end
+end)
+
+player.CharacterAdded:Connect(function(char)
+	char:WaitForChild("Humanoid")
+end)
+
+-- Speed (WalkSpeed 28)
+local speedEnabled = false
+local speedButton = createButton("Speed: OFF", function(btn)
+	speedEnabled = not speedEnabled
+	btn.Text = "Speed: " .. (speedEnabled and "ON" or "OFF")
+	player.Character.Humanoid.WalkSpeed = speedEnabled and 28 or 16
+end)
+
+player.CharacterAdded:Connect(function(char)
+	char:WaitForChild("Humanoid").WalkSpeed = speedEnabled and 28 or 16
+end)
+
+-- ESP (Whole Body)
+createButton("Esp", function()
+	for _, p in pairs(Players:GetPlayers()) do
+		if p ~= player and p.Character then
+			for _, part in pairs(p.Character:GetChildren()) do
+				if part:IsA("BasePart") and not part:FindFirstChild("ESPBox") then
+					local box = Instance.new("BoxHandleAdornment")
+					box.Name = "ESPBox"
+					box.Size = part.Size
+					box.Adornee = part
+					box.AlwaysOnTop = true
+					box.ZIndex = 5
+					box.Color3 = Color3.fromRGB(255, 0, 0)
+					box.Transparency = 0.7
+					box.Parent = part
+				end
+			end
+			if not p.Character:FindFirstChild("ChamHighlight") then
+				local hl = Instance.new("Highlight", p.Character)
+				hl.Name = "ChamHighlight"
+				hl.FillColor = Color3.fromRGB(255, 50, 50)
+				hl.OutlineColor = Color3.new(1, 1, 1)
+				hl.FillTransparency = 0.5
+			end
+		end
+	end
+end)
